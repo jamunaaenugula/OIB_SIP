@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpeort" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+        portfolio
+    </title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+
+        }
+
+        body {
+            background-color: rgb(39, 72, 77);
+            color: white;
+            font-family: 'poppins', sans-serif;
+
+
+        }
+
+        nav {
+            background-color: rgb(11, 61, 68);
+            height: 40px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .left {
+            font-size: 1.8rem;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .right ul {
+
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .right ul li {
+            list-style: none;
+            margin: 0 23px;
+
+        }
+
+        .right ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .right ul li a:hover {
+            color: blueviolet;
+            font-size: 1.04rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: center;
+            gap: 150px;
+            margin: 30px 0;
+
+        }
+
+        .firstsection>div {
+            width: 30%;
+
+        }
+
+        .leftsection {
+            font-size: 2rem;
+            margin: 80px 0;
+
+        }
+
+        .rightsection img {
+            margin-right: 50px;
+        }
+
+        .purple {
+            color: rgb(239, 234, 245);
+        }
+
+        #element {
+            color: rgb(240, 239, 241);
+        }
+
+        .secondsection {
+            margin: 0 120px;
+            height: 80vh;
+
+        }
+
+        main hr {
+            margin: 50px 30px;
+
+        }
+
+        .secondsection h1 {
+            font-size: 1.5rem;
+        }
+
+        .secondsection p {
+            color: gray;
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 100px 0;
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .secondsection .vertical {
+            height: 90px;
+            width: 1px;
+            background-color: white;
+            margin: 0 120px;
+        }
+
+        .image-alt {
+    
+
+            position: relative;
+            top: -40px;
+            left: -10px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 250px;
+            font-size: large;
+            left: -10px;
+
+        }
+
+        .vertical-desc {
+            font-size: 1.2rem;
+            margin-top: 8px;
+            width: 200px;
+            position: relative;
+            top: 80px;
+            left: 15px;
+            color: rgb(190, 190, 190);
+            line-height: 25px;
+
+
+
+        }
+
+        .footer {
+            background-color: rgb(31, 36, 36);
+            padding: 50px;
+            display: flex;
+            justify-content: space-around;
+
+
+
+        }
+
+        .footer-left {
+            font-size: larger;
+        }
+
+        .footer div ul {
+            list-style: none;
+            letter-spacing: 0.5px;
+            line-height: 25px;
+        }
+
+        .firstsection button {
+            margin-top: 30px;
+        }
+
+        .btn {
+            padding: 10px;
+            padding: auto 10px;
+            font-size: large;
+            background-color: #182c35;
+            color: white;
+            border: 2px solid white;
+            border-radius: 5px;
+            width: 100px;
+            cursor: pointer;
+        }
+
+        .firstsection div button a {
+            text-decoration: none;
+            color: white;
+
+        }
+    </style>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Jamuna's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">Hi,My name is
+                <span class="purple"> Jamuna</span>
+                <div>and I am a Passionate</div>
+                <!-- Element to contain animated typing -->
+                <div><span id="element"></span></div>
+                <!-- Load library from the CDN -->
+                <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+                <!-- Setup and start animation! -->
+                <script>
+                    var typed = new Typed('#element', {
+                        strings: ['<i>Web Developer</i>'],
+                        typeSpeed: 100,
+                    });
+                </script>
+</body>
+<button class="btn"><a href="jamuna.pdf" target="_blank" download="jamuna.pdf">Resume</a></button>
+<button class="btn"><a href="https://github.com/jamunaaenugula/jamunaaenugula" target="_blank">GitHub</a></button>
+<button class="btn"><a href="https://www.linkedin.com/in/jamuna-enugula-72483a261" target="_blank">LinkedIn</a></button>
+</div>
+<div class="rightsection">
+    <img src="./bg.png" alt="developer" height="400">
+</div>
+
+</section>
+<hr>
+<section class="secondsection">
+    <p>what I have done so far </p>
+
+    <h1>SKILLS</h1>
+    <div class="box">
+        <div class="vertical">
+            <img src="coding.png" class="image-alt" alt="web technologies" height="30px">
+            <div class="vertical-title">
+                <b>Web Technologies</b>
+            </div>
+            <div class="vertical-desc">
+                <ul>
+                    <li>Html5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="vertical">
+            <img src="./javaimage.png" class="image-alt" alt="web technologies" height="27px">
+            <div class="vertical-title">
+                <b>Programming Languages</b>
+            </div>
+            <div class="vertical-desc">
+                <ul>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>Java</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="vertical">
+            <img src="./lang2.jpg" class="image-alt" alt="web technologies" height="30px">
+            <div class="vertical-title">
+                <b>Languages Known</b>
+            </div>
+            <div class="vertical-desc">
+                <ul>
+                    <li>Telugu</li>
+                    <li>English</li>
+                    <li>Hindhi</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="vertical">
+            <img src="./soft" class="image-alt" alt="web technologies" height="30px">
+            <div class="vertical-title">
+                <b>Soft Skills</b>
+            </div>
+            <div class="vertical-desc">
+                <ul>
+                    <li>Time Management</li>
+                    <li>Self Learner</li>
+                    <li>Hard worker</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="vertical">
+            <img src="./hobbi.jpg" class="image-alt" alt="web technologies" height="30px">
+            <div class="vertical-title">
+                <b>Hobbies</b>
+            </div>
+            <div class="vertical-desc">
+                <ul>
+                    <li>Novel Reading</li>
+                    <li>Watching Movies</li>
+                    <li>Listening to movies</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+</main>
+
+<footer class="footer">
+    <div class="footer-left">
+        Jamuna's portfolio
+    </div>
+    <div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Project</li>
+            <li>Contact me</li>
+        </ul>
+
+
+    </div>
+    <div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Project</li>
+            <li>Contact me</li>
+
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Project</li>
+            <li>Contact me</li>
+
+        </ul>
+
+    </div>
+</footer>
+
+
+</body>
+</head>
+
+</html>
